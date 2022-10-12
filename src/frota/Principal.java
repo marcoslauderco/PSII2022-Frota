@@ -15,12 +15,17 @@ public class Principal {
      */
     public static void main(String[] args) {
         Carro gol = new Carro();
-        System.out.println("Teste 5");
-        if(gol.documentaoOk){
+        if(gol.isDocumentaoOk()){
             System.out.println("OK");
         }else{
             System.out.println("Apreendido");
         }
+        
+        System.out.println("km "+gol.getQuilometragemPercorrida());
+        gol.percorrer(1000);
+        System.out.println("km "+gol.getQuilometragemPercorrida());
+        gol.percorrer(500);
+        System.out.println("km "+gol.getQuilometragemPercorrida());
     }
     
 }
