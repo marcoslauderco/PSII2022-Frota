@@ -10,6 +10,13 @@ package frota;
  */
 public class Caminhao extends Veiculo{
     private int capacidadeDeCarga;
+    
+    @Override
+    public void percorrer(int quilometragemPercorrida) {
+        super.percorrer(quilometragemPercorrida);
+        float litrosConsumidos = quilometragemPercorrida / 3;
+        System.out.println("Foram consumidos "+litrosConsumidos+" litros");
+    }
 
     public int getCapacidadeDeCarga() {
         return capacidadeDeCarga;

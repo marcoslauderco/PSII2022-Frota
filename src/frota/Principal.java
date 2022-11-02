@@ -16,11 +16,6 @@ public class Principal {
     public static void main(String[] args) {
         Carro gol = new Carro();
         gol.setQuantidadeDePassageiro(5);
-        if(gol.isDocumentaoOk()){
-            System.out.println("OK");
-        }else{
-            System.out.println("Apreendido");
-        }
         
         System.out.println("km "+gol.getQuilometragemPercorrida());
         gol.percorrer(1000);

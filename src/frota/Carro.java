@@ -11,6 +11,15 @@ package frota;
 public class Carro extends Veiculo{
    private int quantidadeDePassageiro;
 
+    @Override
+    public void percorrer(int quilometragemPercorrida) {
+        super.percorrer(quilometragemPercorrida);
+        float litrosConsumidos = quilometragemPercorrida / 10;
+        System.out.println("Foram consumidos "+litrosConsumidos+" litros");
+    }
+   
+   
+
     public int getQuantidadeDePassageiro() {
         return quantidadeDePassageiro;
     }
@@ -19,5 +28,5 @@ public class Carro extends Veiculo{
         this.quantidadeDePassageiro = quantidadeDePassageiro;
     }
    
-   
+  
 }
